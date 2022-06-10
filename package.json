@@ -1,0 +1,11 @@
+{
+  "name": "vsworkspace",
+  "version": "1.0.0",
+  "description": "CGV clone coding",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000 ./public"
+  },
+  "author": "hill0ne <jeanj531@gmail.com>",
+  "license": "MIT"
+}
