@@ -4,7 +4,7 @@
   "description": "CGV clone coding",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3000 ./public"
+    "start": "live-server --port=3000"
   },
   "author": "hill0ne <jeanj531@gmail.com>",
   "license": "MIT"
