@@ -4,61 +4,139 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/common.css" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./stylesheet/unit.css" />
+    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="./js/header.js" defer></script>
     <title>영화, 그 이상의 감동. CGV</title>
 </head>
 <body>
     <header class="header">
         <div class="topBanner">
-            <a href="#"></a>
+        <a href="#">
             <img class="banner" src="./assets/img/0602_980x80.jpg" alt="영화 '마녀' 배너" />
-            <button class="button--close">
-                <img src="./assets/img/btn_ad_close.png" alt="닫힘" />
-            </button>
+        </a>
+            <img class="close" src="./assets/img/btn_ad_close.png" alt="닫힘" />
         </div>
-        <nav>
-            <div class="menu--personal">
+        <nav class="top-nav">
+            <div class="menu--top-nav">
                 <img class="logo" src="./assets/img/logoRed.png" alt="CGV 로고">
                 <span>CULTUREPLEX</span>
-                <img class="image--hyundaicard" src="./assets/img/hyundaicard.png" alt="현대카드 M포인트 사용" />
-                <img class="image--login" src="./assets/img/loginPassword.png" alt="로그인" />
-                <span class="logIn">로그인</span>
-                <img class="image--join" src="./assets/img/loginJoin.png" alt="회원가입" />
-                <span class="signIn">회원가입</span>
-                <img class="image--member" src="./assets/img/loginMember.png" alt="회원정보" />
-                <span class="userInfo">MY CGV</span>
-                <img class="image--service" src="./assets/img/loginCustomer.png" alt="고객센터" />
-                <span class="serviceCenter">고객센터</span>
+                <div class="personal-menus-wrap">
+                    <img class="hyundaicard-promotion" src="./assets/img/hyundaicard.png" alt="현대카드 M포인트 사용" />
+                    <div class="menu-wrap">
+                        <img src="./assets/img/loginPassword.png" alt="로그인" />
+                        <span>로그인</span>
+                    </div>
+                    <div class="menu-wrap">
+                        <img src="./assets/img/loginJoin.png" alt="회원가입" />
+                        <span>회원가입</span>
+                    </div>
+                    <div class="menu-wrap">
+                        <img src="./assets/img/loginMember.png" alt="회원정보" />
+                        <span>MY CGV</span>
+                    </div>
+                    <div class="menu-wrap">
+                        <img src="./assets/img/loginCustomer.png" alt="고객센터" />
+                        <span>고객센터</span>
+                    </div>
+                </div>
             </div>
-            <div class="menu--service">
-                <span>영화</span>
-                <span>극장</span>
-                <span>예매</span>
-                <span>스토어</span>
-                <span>이벤트</span>
-                <span>혜택</span>
-                <div class="input--search">
-                    <input type="text">
-                    <img class="search" src="./assets/img/search.png" alt="검색">
+            <div class="horizon-line"></div>
+            <div class="menu--service-wrap">
+                <div class="menu--service-tabs">
+                    <span>영화</span>
+                    <span>극장</span>
+                    <span style="color: #fb4357; font-weight: 700;">예매</span>
+                    <span>스토어</span>
+                    <span>이벤트</span>
+                    <span>혜택</span>
+                </div>
+                <div class="input-wrap">
+                    <label for="search" class="input--search">
+                        <input type="text" id="search">
+                        <img src="./assets/img/search.png" alt="검색">
+                    </label>
                 </div>
             </div>
         </nav>
+            <div class="dropdown-deactivate">
+                <dl>
+                    <dt><h3>영화</h3></dt>
+                    <dd><a href="">무비차트</a></dd>
+                    <dd><a href="">아트하우스</a></dd>
+                    <dd><a href="">ICECON</a></dd>
+                </dl>
+                <div class="vertical-line"
+                    style="margin-left: 6rem;"></div>
+                <dl>
+                    <dt><h3>극장</h3></dt>
+                    <dd><a href="">CGV 극장</a></dd>
+                    <dd><a href="">특별관</a></dd>
+                </dl>
+                <div class="vertical-line"
+                    style="margin-left: 6rem;"></div>
+                <dl>
+                    <dt><h3>예매</h3></dt>
+                    <dd><a href="">빠른예매</a></dd>
+                    <dd><a href="">상영스케줄</a></dd>
+                    <dd><a href="">English Ticketing</a></dd>
+                    <dd><a href="">English Schedule</a></dd>
+                </dl>
+                <div class="vertical-line"
+                style="margin-left: 1rem;"></div>
+                <dl>
+                    <dt><h3>스토어</h3></dt>
+                    <dd><a href="">영화관람권</a></dd>
+                    <dd><a href="">기프트카드</a></dd>
+                    <dd><a href="">콤보</a></dd>
+                    <dd><a href="">팝콘</a></dd>
+                    <dd><a href="">음료</a></dd>
+                    <dd><a href="">스낵</a></dd>
+                    <dd><a href="">플레이존</a></dd>
+                    <dd><a href="">씨네샵 ></a></dd>
+                </dl>
+                <div class="vertical-line"
+                     style="margin-left: 6rem;"></div>
+                <dl>
+                    <dt><h3>이벤트</h3></dt>
+                    <dd><a href="">SPECIAL</a></dd>
+                    <dd><a href="">영화/예매</a></dd>
+                    <dd><a href="">멤버십/CLUB</a></dd>
+                    <dd><a href="">CGV 극장별</a></dd>
+                    <dd><a href="">제휴할인</a></dd>
+                    <dd><a href="">당첨자 발표</a></dd>
+                    <dd><a href="">종료된 이벤트</a></dd>
+                </dl>
+                <div class="vertical-line"
+                style="margin-left: 4.3rem;"></div>
+                <dl>
+                    <dt><h3>혜택</h3></dt>
+                    <dd><a href="">CGV 할인정보</a></dd>
+                    <dd><a href="">CLUB 서비스</a></dd>
+                    <dd><a href="">VIP 라운지</a></dd>
+                </dl>
+            </div>
     </header>
-    <main class="mainContent">
-        <figure>
-            <video width="250" autoplay muted>
-                <source src="./assets/video/220527_Witch2_1080x608.mp4"
-                type="video/mp4" class="video--movie" />
-            </video>
+    <main class="main">
+        <figure class="contents">
+            <div class="video-wrap">
+                <video width="250" autoplay muted>
+                    <source src="./assets/video/220527_Witch2_1080x608.mp4" type="video/mp4" />
+                </video>
+            </div>
             <figcaption>
-                <strong>마녀 Part2. The Other One</strong>
-                모든 것의 시작, 또 다른 존재가 깨어난다!
+                <strong class="movie-title">마녀 Part2. The Other One</strong>
+               <span class="movie-text">
+                모든 것의 시작,
+                또 다른 존재가 깨어난다!</span>
             </figcaption>
         </figure>
         <div class="video--controller-wrap">
-            <a class="link--videoDetail">상세보기</a>
-            <img src="./assets/img/arrowR_8x13.png" alt="오른쪽 화살표" />
+            <div class="view-detail-wrap">
+                <a>상세보기</a>
+                <img src="./assets/img/arrowR_8x13.png" alt="오른쪽 화살표" />
+            </div>
             <button class="button--videoPlay">
                 <img src="./assets/img/play.png" alt="재생" />
             </button>
@@ -68,7 +146,7 @@
         </div>
     </main>
     <section class="section--movieChart">
-        <div class="sectionTab-wrap">
+        <div class="moviechart-wrap">
             <h2>무비차트</h2>
             <h2>상영예정작</h2>
                 <a href="#" class="link--viewAll">전체보기
