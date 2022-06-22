@@ -1,0 +1,403 @@
+.section--movieChart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 4rem;
+  width: 100%;
+  height: 45rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(232, 232, 232, 0.37)
+  );
+}
+
+.movieChart-contents {
+  position: absolute;
+  top: 10%;
+}
+
+.movieChart-top-wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 98rem;
+}
+
+.movieChart-menu-wrap {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movieChart-menu-wrap button {
+  border: none;
+  font-size: 2.6rem;
+  background-color: inherit;
+}
+
+.button-movie-chart {
+  font-weight: 700;
+  color: #222;
+}
+
+.button-movie-scheduled {
+  padding-left: 3rem;
+  color: #666666;
+  font-weight: 400;
+}
+
+.button-movie-scheduled::before {
+  position: absolute;
+  content: "";
+  background-color: #d8d8d8;
+  width: 1px;
+  height: 1.5rem;
+  top: 1.7rem;
+  left: 12rem;
+}
+
+.view-button-wrap {
+  padding: 0.4rem 1rem 0.4rem 1.5rem;
+  border-radius: 15px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
+}
+
+.view-button-wrap a {
+  color: #343434;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.view-button-wrap img {
+  width: 0.8rem;
+  height: 1.3rem;
+  margin-left: 0.8rem;
+}
+
+.movie-swiper-slide {
+  display: flex;
+  position: relative;
+  width: 98rem;
+  padding-top: 1.5rem;
+}
+
+.movie-image-wrap {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 18rem;
+  height: 23.4rem;
+  margin-right: 3rem;
+  z-index: 2;
+}
+
+.movie-image-wrap:hover::after {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.09) 35%,
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+.grade {
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 1rem;
+  left: 14.5rem;
+  z-index: 2;
+}
+
+.poster {
+  position: absolute;
+  width: 17rem;
+  height: 23.4rem;
+  border-radius: 5%;
+}
+
+.ranking {
+  position: absolute;
+  bottom: -1.3rem;
+  left: 1rem;
+  font-size: 5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 2px 5px 5px rgb(0 0 0 / 45%);
+}
+
+.movieName {
+  position: relative;
+  top: 100%;
+  width: 17rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #222;
+}
+
+.movie-info-wrap {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 110%;
+  width: 17rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #444;
+  z-index: 4;
+}
+
+.movie-info-wrap span img {
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle;
+}
+
+.movie-info-wrap span {
+  font-size: 1.4rem;
+}
+
+.movieChart-button-wrap {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 3;
+  opacity: 0;
+}
+
+.movieChart-button-wrap a {
+  position: relative;
+  left: 2rem;
+  top: 32%;
+}
+
+.movieChart-button-wrap:hover {
+  opacity: 1;
+}
+
+.movieChart-button-wrap a:hover {
+  opacity: 0.7;
+}
+
+.button--swiper-slide-wrap {
+  position: absolute;
+  left: 96rem;
+  bottom: 38%;
+  z-index: 4;
+}
+
+.button--swiper-slide-wrap button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8) url("./../images/common/ico/arrowL.png")
+    center/9px 13px scroll no-repeat;
+  box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.button--swiper-slide-wrap img {
+  width: 0.8rem;
+  height: 1.3rem;
+}
+
+.movieChart-button-wrap a {
+  display: block;
+  width: 12rem;
+  height: 3.4rem;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 7px;
+}
+
+.movieChart-button-wrap a:nth-child(1) {
+  background-color: #fff;
+  color: #666;
+}
+
+.movieChart-button-wrap a:nth-child(2n) {
+  background-color: #fb4357;
+  color: #fff;
+}
+
+.section--event {
+  position: relative;
+  top: 4rem;
+  width: 98rem;
+  height: 45rem;
+  margin: 0 auto;
+}
+
+.section--event-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section--event::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -2rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowR_8x13.png")
+    center/9px 13px scroll no-repeat;
+  box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.event-top-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.event-top-wrap h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.button-wrap {
+  display: -webkit-box;
+  position: absolute;
+  right: 1px;
+}
+
+.button--pause {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  right: 0.5rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.button--pause img {
+  width: 0.9rem;
+  height: 1.2rem;
+}
+
+.event-swiper-slide-wrap {
+  display: flex;
+  position: relative;
+  animation-name: swiper-slide;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes swiper-slide {
+  0%,
+  30% {
+    transform: translateX(0%);
+  }
+  50%,
+  70%,
+  90%,
+  100% {
+    transform: translateX(-33rem);
+  }
+}
+
+.event-info-wrap {
+  display: block;
+  width: 31rem;
+  margin-right: 2.5rem;
+}
+
+.event-image-wrap {
+  width: inherit;
+  height: inherit;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-image-wrap img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+.event-image-wrap img:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.event-info-wrap strong {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-info-wrap p {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.button--swiper-slide-wrap-event {
+  bottom: 47%;
+}
+
+.section--specialHall {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  width: 98rem;
+  height: 45rem;
+  border: 1px solid peru;
+  top: 4rem;
+}
+
+.specialHall-top-wrap {
+  border: 1px solid red;
+}
+
+.specialHall-top-wrap h2 {
+  margin: 0;
+}

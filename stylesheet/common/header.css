@@ -23,14 +23,14 @@
   z-index: 10;
 }
 
-.top-nav {
+.header-wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
   background: #fff;
 }
 
-.menu--top-nav {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,14 +44,14 @@
   width: 11.7rem;
 }
 
-.menu--top-nav > span {
+.header-top > span {
   font-size: 1.6rem;
   letter-spacing: 0.6rem;
   font-weight: 300;
   transform: translate(-11rem, 1.3rem);
 }
 
-.personal-menus-wrap {
+.personal-menu-wrap {
   display: flex;
   align-items: center;
   height: 6rem;
@@ -63,7 +63,7 @@
   margin-right: 3rem;
 }
 
-.menu-wrap {
+.personal-each-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +71,7 @@
   width: 8rem;
 }
 
-.menu-wrap > img {
+.personal-each-wrap > img {
   width: 3.7rem;
   height: 3.7rem;
 }
@@ -88,13 +88,13 @@
   background-color: #cacaca;
 }
 
-.menu--service-wrap {
+.service-menu-wrap {
   display: flex;
   justify-content: space-between;
   width: 98rem;
 }
 
-.menu--service-tabs {
+.service-menu-tabs {
   position: relative;
   padding: 1.4rem;
 }
@@ -130,10 +130,14 @@
   margin: 0;
 }
 
-.menu--service-dropdown > dl dt > h3 {
+.menu--service-dropdown > dl dt h3 {
   margin: 0;
   padding: 1.5rem 1.5rem 1rem 1.5rem;
   font-size: 1.4rem;
+}
+
+.menu--service-dropdown > dl dt h3 a {
+  text-decoration: none;
 }
 
 .menu--service-dropdown > dl dd {
@@ -154,15 +158,20 @@
   background-color: #eee;
 }
 
-.menu--service-tabs:hover {
+.service-menu-tabs:hover {
   cursor: pointer;
 }
 
-.menu--service-tabs > span {
+.service-menu-tabs > a {
   padding: 0 4.7rem 0 0;
   font-size: 1.6rem;
   font-weight: 500;
   color: #222;
+}
+
+.a11y-hidden {
+  position: absolute;
+  opacity: 0;
 }
 
 .input-wrap {
@@ -263,7 +272,7 @@
 .movie-text {
   position: relative;
   top: -30rem;
-  left: 2rem;
+  left: 4.5rem;
   color: #fff;
   white-space: pre;
   font-size: 2rem;
@@ -292,6 +301,7 @@
 .view-detail-wrap a {
   font-size: 1.4rem;
   color: #343434;
+  text-decoration: none;
 }
 
 .view-detail-wrap img {
