@@ -70,6 +70,7 @@
 .view-button-wrap a {
   color: #343434;
   font-size: 1.4rem;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -391,7 +392,6 @@
   margin: 0 auto;
   width: 98rem;
   height: 45rem;
-  top: 4rem;
 }
 
 .specialHall-top-wrap {
@@ -473,4 +473,94 @@
 
 .list-checked {
   border: 1px solid #000;
+}
+
+.section--gifticon {
+  position: relative;
+  top: 4rem;
+  width: 98rem;
+  height: 37rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.gifticon-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.gifticon-list {
+  display: flex;
+  width: 31%;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+}
+
+.gifticon-list-top-wrap {
+  display: flex;
+  margin-bottom: 3rem;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+
+.gifticon-list-top-wrap dt {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.gifticon-list-top-wrap a {
+  text-decoration: none;
+}
+
+.gifticon-list dl {
+  width: 100%;
+  margin: 0;
+}
+
+.gifticon-list dl dd {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+.gifticon-list dl dd img {
+  width: 7.5rem;
+  height: 7.6rem;
+  display: inline-block;
+}
+
+.view-button-detail {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 1.5rem 0.3rem 1.5rem;
+  line-height: 2rem;
+  border: 1px solid #f4f4f4;
+  color: #666;
+  border-radius: 12px;
+}
+
+.gifticon-content-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+
+.gifticon-content-wrap span {
+  font-size: 1.4rem;
+  color: #222222;
+}
+
+.gifticon-content-wrap strong {
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
