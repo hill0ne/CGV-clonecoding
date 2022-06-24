@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <script src="./js/header.js" defer></script>
+    <script src="./js/section.js" defer></script>
     <title>영화, 그 이상의 감동. CGV</title>
   </head>
   <body>
@@ -138,7 +139,7 @@
           </video>
         </div>
         <figcaption>
-          <strong class="movie-title">마녀 Part2. The Other One</strong>
+          <strong class="movie-title">마녀 Part2. The Other one</strong>
           <span class="movie-text">
             모든 것의 시작,
             또 다른 존재가 깨어난다!</span
@@ -317,81 +318,114 @@
     </section>
 
     <section class="section--specialHall">
-      <div class="specialHall-top-wrap event-top-wrap">
+      <div class="specialHall-top-wrap">
         <h2>특별관</h2>
-        <a href="#">전체보기
-          <img src="./assets/img/arrowR_8x13.png" alt="오른쪽 화살표" />
-        </a>
+        <div class="view-button-wrap">
+          <a href="#">전체보기
+            <img src="./assets/img/arrowR_8x13.png" alt="오른쪽 화살표" />
+          </a>
+        </div>
       </div>
-      <div class="specialHall-wrap">
-        <img src=".//src/img/special-suitecinema.png" alt="SUITE CINEMA HALL" />
-        <p>SUITE CINEMA #호텔 컨셉의 프리미엄관</p>
-        <p>SKY BOX #Premium #Private</p>
-        <p>4DX #모션시트 #오감체험</p>
-        <p>CINE de CHEF #쉐프가 있는 영화관</p>
+
+      <div class="specialHall-content-wrap">
+        <div class="specialHall-image-wrap">
+          <img src="./assets/img/special-suitecinema.png"
+          class="specialHall-image" 
+          alt="SUITE CINEMA HALL" />
+        </div>
+        <div class="specialHall-text-wrap">
+          <ul class="specialHall-list">
+            <li class="list-checked">
+              <a href="" data-id="0">SUITE CINEMA
+                <span>#호텔 컨셉의 프리미엄관</span>
+              </a>
+            </li>
+            <li>
+              <a href="" data-id="1">SKY BOX
+                <span>#Premium #Private</span>
+              </a>
+            </li>
+            <li>
+              <a href="" data-id="2">4DX
+                <span>#모션시트 #오감체험</span>
+              </a>
+            </li>
+            <li>
+              <a href="" data-id="3" style="border-bottom: 1px solid #e9e9e9;">
+                CINE de CHEF
+              <span>#쉐프가 있는 영화관</span>
+            </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <ul>
-      <li>
-        <dl class="gifticon-list">
-          <dt class="des-title">영화관람권</dt>
-          <a href="#" class="link--viewDetail">더보기</a>
-          <dd class="des-content">
-            <img src=".//src/img/ticket.jpg" alt="CGV 영화관람권" />
-            <div class="des-content-wrap">
-              <span>CGV 영화관람권</span>
-              <strong>12,000원</strong>
+    <section class="section--gifticon">
+        <ul class="gifticon-list-wrap">
+        <li class="gifticon-list">
+          <dl>
+            <div class="gifticon-list-top-wrap">
+              <dt>영화관람권</dt>
+              <a href="#" class="link--viewDetail">더보기</a>
             </div>
-          </dd>
-          <dd class="des-content">
+            <dd>
+              <img src="./assets/img/ticket.jpg" alt="CGV 영화관람권" />
+              <div class="gifticon-content-wrap">
+                <span>CGV 영화관람권</span>
+                <strong>12,000원</strong>
+              </div>
+            </dd>
+            <dd>
+              <img
+                src="./assets/img/ticket-goldclass.jpg"
+                alt="CGV 골드클래스 이용권"
+              />
+              <div class="giticion-content-wrap">
+                <span>골드클래스</span>
+                <strong>40,000원</strong>
+              </div>
+            </dd>
+            <dd>
+              <img src="./assets/img/ticket-4DX.jpg" alt="CGV 4DX 관람권" />
+              <div class="gifticon-content-wrap">
+                <span>4DX 관람권</span>
+                <strong>19,000원</strong>
+              </div>
+            </dd>
+          </dl>
+        </li>
+        <li>
+        <dl>
+          <div class="gifticon-list-top-wrap">
+            <dt>기프트카드</dt>
+            <a href="#" class="link--viewDetail">더보기</a>
+          </div>
+          <dd>
             <img
-              src=".//src/img/ticket-goldclass.jpg"
-              alt="CGV 골드클래스 이용권"
-            />
-            <div class="des-content-wrap">
-              <span>골드클래스</span>
-              <strong>40,000원</strong>
-            </div>
-          </dd>
-          <dd class="des-content">
-            <img src=".//src/img/ticket-4DX.jpg" alt="CGV 4DX 관람권" />
-            <div class="des-content-wrap">
-              <span>4DX 관람권</span>
-              <strong>19,000원</strong>
-            </div>
-          </dd>
-        </dl>
-      </li>
-      <li>
-        <dl class="gifticon-wrap">
-          <dt class="des-title">기프트카드</dt>
-          <a href="#" class="link--viewDetail">더보기</a>
-          <dd class="des-content">
-            <img
-              src=".//src/img/PACONNIE-A.jpg"
+              src="./assets/img/PACONNIE-A.jpg"
               alt="PACONNIE A형 금액충전형"
             />
-            <div class="des-content-wrap">
+            <div class="gifticon-content-wrap">
               <span>PACONNIE A형</span>
-              <strong class="gifticon">금액충전형</strong>
+              <strong>금액충전형</strong>
             </div>
           </dd>
-          <dd class="des-content">
+          <dd>
             <img
-              src=".//src/img/PACONNIE-B.jpg"
+              src="./assets/img/PACONNIE-B.jpg"
               alt="PACONNIE B형 금액충전형"
             />
-            <div class="des-content-wrap">
+            <div class="gifticon-content-wrap">
               <span>PACONNIE B형</span>
               <strong>금액충전형</strong>
             </div>
           </dd>
-          <dd class="des-content">
+          <dd>
             <img
-              src=".//src/img/PACONNIE-C.jpg"
+              src="./assets/img/PACONNIE-C.jpg"
               alt="PACONNIE C형 금액충전형"
             />
-            <div class="des-content-wrap">
+            <div class="gifticon-content-wrap">
               <span>PACONNIE C형</span>
               <strong>금액충전형</strong>
             </div>
@@ -399,26 +433,28 @@
         </dl>
       </li>
       <li>
-        <dl class="gifticon-wrap">
-          <dt class="des-title">콤보</dt>
-          <a href="#" class="link--viewDetail">더보기</a>
-          <dd class="des-content">
-            <img src=".//src/img/CGVcombo.jpg" alt="CGV 팝콘 콤보" />
-            <div class="des-content-wrap">
+        <dl>
+          <div class="gifticon-top-wrap">
+            <dt>콤보</dt>
+            <a href="#" class="link--viewDetail">더보기</a>
+          </div>
+          <dd>
+            <img src="./assets/img/CGVcombo.jpg" alt="CGV 팝콘 콤보" />
+            <div class="gifticon-content-wrap">
               <span>CGV 콤보</span>
               <strong>9,000원</strong>
             </div>
           </dd>
-          <dd class="des-content">
-            <img src=".//src/img/Doublecombo.jpg" alt="CGV 더블콤보" />
-            <div class="des-content-wrap">
+          <dd>
+            <img src="./assets/img/Doublecombo.jpg" alt="CGV 더블콤보" />
+            <div class="gifticon-content-wrap">
               <span>더블콤보</span>
               <strong>12,000원</strong>
             </div>
           </dd>
-          <dd class="des-content">
-            <img src=".//src/img/smallset.jpg" alt="CGV 스몰세트" />
-            <div class="des-content-wrap">
+          <dd>
+            <img src="./assets/img/smallset.jpg" alt="CGV 스몰세트" />
+            <div class="gifticon-content-wrap">
               <span>스몰세트</span>
               <strong>6,500원</strong>
             </div>
@@ -426,6 +462,7 @@
         </dl>
       </li>
     </ul>
+    </section>
     <section class="section--userBoard">
       <div class="notice-wrap">
         <h3>공지사항</h3>
