@@ -301,9 +301,9 @@
   width: 3rem;
   height: 3rem;
   right: 0.5rem;
+  background-color: inherit;
   border: 1px solid #e3e3e3;
   border-radius: 50%;
-  background-color: inherit;
 }
 
 .button--pause img {
@@ -539,13 +539,14 @@
 }
 
 .view-button-detail {
+  padding: 0.2rem 1.5rem 0.3rem 1.5rem;
   font-size: 1.2rem;
   font-weight: 400;
-  padding: 0.2rem 1.5rem 0.3rem 1.5rem;
   line-height: 2rem;
-  border: 1px solid #f4f4f4;
   color: #666;
+  border: 1px solid #f4f4f4;
   border-radius: 12px;
+  text-decoration: none;
 }
 
 .gifticon-content-wrap {
@@ -563,4 +564,332 @@
   color: #222;
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+.section--user-notice {
+  display: flex;
+  position: relative;
+  top: 8rem;
+  width: 98rem;
+  height: 30rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.user-board-wrap {
+  width: 52rem;
+  height: 80%;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.board-notice-wrap,
+.board-serviceCenter-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #222;
+  padding: 2rem 2.5rem 2rem 3rem;
+}
+
+.board-notice-wrap::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 2.5rem;
+  width: 90%;
+  transform: translateY(-100%);
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.user-board-wrap div h3,
+.board-serviceCenter-wrap h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.board-notice-wrap span,
+.board-serviceCenter-content-wrap > * {
+  width: 33rem;
+  font-size: 1.4rem;
+  padding-left: 3rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.board-notice-wrap a {
+  white-space: nowrap;
+}
+
+.board-serviceCenter-wrap {
+  padding-top: 0;
+}
+
+.board-serviceCenter-content-wrap * {
+  position: relative;
+  display: inline-block;
+  top: 2.3rem;
+}
+
+.board-etc-wrap {
+  position: relative;
+  top: 3.5rem;
+  padding-left: 3rem;
+}
+
+.board-etc-wrap * {
+  margin-right: 1rem;
+  padding: 0.6rem 1.3rem;
+  line-height: 1rem;
+  color: #222;
+  background-color: #f6f6f6;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+.article--app-scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22rem;
+  height: 80%;
+  border-left: none;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.article--app-scan h4 {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #222;
+}
+
+.app-messageA {
+  margin: 0;
+  padding-top: 0.7rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.article--app-scan img {
+  width: 6rem;
+  height: 6rem;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+.app-messageB {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.kakaopay-promotion {
+  position: relative;
+  height: 24rem;
+  padding-left: 3rem;
+}
+
+.promotion-slide-wrap {
+  width: 21rem;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.promotion-image-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation-name: swiper-slide-event-notice;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.promotion-image-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.kakaopay-promotion button {
+  position: absolute;
+  bottom: 1rem;
+  background-color: #fff;
+}
+
+@keyframes swiper-slide-event-notice {
+  0%,
+  30% {
+    transform: translateX(0%);
+  }
+  50%,
+  70%,
+  90%,
+  100% {
+    transform: translateX(-210px);
+  }
+}
+
+.woori-promotion-wrap {
+  position: relative;
+  top: 20rem;
+  width: 100%;
+  height: 20rem;
+  background-color: #ffa443;
+}
+
+.woori-promotion-wrap img {
+  position: relative;
+  width: 98rem;
+  height: 24rem;
+  bottom: 5rem;
+  left: 18%;
+}
+
+.footer {
+  position: relative;
+  top: 20rem;
+  width: 100%;
+  height: 20rem;
+  background: #f8f8f8;
+}
+
+.footer-wrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-policy-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 98rem;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.footer-policy-list-wrap li {
+  list-style: none;
+}
+
+.footer-policy-list-wrap a {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #666;
+  line-height: 1.4rem;
+}
+
+.footer-policy-list-wrap .personal-policy {
+  text-decoration: underline;
+  color: #222222;
+  font-weight: 700;
+}
+
+.company-notice-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 98rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.company-notice-wrap address {
+  font-style: normal;
+  margin-bottom: 0.2rem;
+}
+
+.company-notice-wrap dl {
+  display: flex;
+  margin: 0.2rem 0;
+}
+
+.company-notice-wrap dl dt::after {
+  content: ":";
+  margin: 0 0.3rem;
+}
+
+.company-notice-wrap dl dd::after {
+  content: "·";
+  margin: 0 0.3rem;
+}
+
+.company-notice-wrap dl dd {
+  margin: 0;
+}
+
+.familysite-wrap {
+  position: absolute;
+  display: flex;
+  bottom: 3rem;
+  right: 26rem;
+}
+
+.familysite-wrap select {
+  padding: 0.5rem;
+  margin-right: 0.2rem;
+  font-size: 1.2rem;
+  color: #666;
+  border: 1px solid #d8d8d8;
+}
+
+.familysite-wrap a {
+  font-size: 1.4rem;
+  padding: 0.4rem 0.6rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #9e9e9e;
+}
+
+.familysite-title {
+  display: none;
+}
+
+.gotoTop {
+  position: fixed;
+  right: 21rem;
+  bottom: 8rem;
+  z-index: 3;
+}
+
+.gotoTop-wrap a {
+  bottom: 2rem;
+  padding: 1.3rem 3.5rem;
+  margin: 0.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 25px;
+  background-color: red;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 115, 86),
+    rgb(251, 67, 87)
+  );
+  box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+  text-decoration: none;
+}
+
+.gotoTop-wrap button {
+  padding: 1rem 1.5rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+}
+
+.gotoTop-wrap button img {
+  width: 1.5rem;
+  height: 2.1rem;
 }
