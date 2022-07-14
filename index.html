@@ -24,58 +24,61 @@
             alt="영화 '마녀' 배너"
           />
         </a>
-        <img class="close" src="./assets/img/btn_ad_close.png" alt="닫힘" />
+        <img class="close-button" src="./assets/img/btn_ad_close.png" alt="닫힘" role="button" />
       </div>
       <div class="header-wrap">
         <div class="header-top">
           <img class="logo" src="./assets/img/logoRed.png" alt="CGV 로고"
-               tabindex="0" />
+               tabindex="0"/>
           <span>CULTUREPLEX</span>
-          <div class="personal-menu-wrap">
-            <img
-              class="hyundaicard-promotion"
-              src="./assets/img/hyundaicard.png"
-              alt="현대카드 M포인트 사용"
-              tabindex="0"
-            />
-            <div class="personal-each-wrap" role="menu" tabindex="0">
-              <img src="./assets/img/loginPassword.png" alt="로그인" />
-              <span>로그인</span>
-            </div>
-            <div class="personal-each-wrap" role="menu" tabindex="0">
-              <img src="./assets/img/loginJoin.png" alt="회원가입" />
-              <span>회원가입</span>
-            </div>
-            <div class="personal-each-wrap" role="menu" tabindex="0">
-              <img src="./assets/img/loginMember.png" alt="회원정보" />
-              <span>MY CGV</span>
-            </div>
-            <div class="personal-each-wrap" role="menu" tabindex="0">
-              <img src="./assets/img/loginCustomer.png" alt="고객센터" />
-              <span>고객센터</span>
-            </div>
+          <img
+            class="hyundaicard-promotion"
+            src="./assets/img/hyundaicard.png"
+            alt="현대카드 M포인트 사용"
+            tabindex="0"
+          />
+          <div class="personal-menu-wrap" role="menubar">
+              <ul class="list">
+                <li><a href="">
+                  <img src="./assets/img/loginPassword.png" alt="로그인" />
+                  <span>로그인</span>
+                </a>
+              </li>
+                <li><a href="">
+                  <img src="./assets/img/loginJoin.png" alt="회원가입" />
+                  <span>회원가입</span>
+                </a></li>
+                <li><a href=""><img src="./assets/img/loginMember.png" alt="회원정보" />
+                  <span>MY CGV</span>
+                </a></li>
+                <li><a href=""><img src="./assets/img/loginCustomer.png" alt="고객센터" />
+                  <span>고객센터</span>
+                </a></li>
+              </ul>
           </div>
         </div>
         <div class="horizon-line"></div>
-        <div class="service-menu-wrap">
-          <nav class="service-menu-tabs">
-            <a role="button" tabindex="0">영화</a>
-            <a role="button" tabindex="0">극장</a>
-            <a role="button" tabindex="0" style="color: #fb4357; font-weight: 700">예매</a>
-            <a role="button" tabindex="0">스토어</a>
-            <a role="button" tabindex="0">이벤트</a>
-            <a role="" tabindex="0">혜택</a>
+        <div class="gnb-menu-wrap" role="menubar">
+          <nav class="gnb-menu">
+            <ul class="list">
+              <li><a role="button" tabindex="0">영화</a></li>
+               <li><a role="button" tabindex="0">극장</a></li>
+               <li><a role="button" tabindex="0">예매</a></li>
+              <li><a role="button" tabindex="0">스토어</a></li>
+              <li><a role="button" tabindex="0">이벤트</a></li>
+              <li><a role="" tabindex="0">혜택</a></li>
+            </ul>
+            <div class="input-wrap">
+              <label for="search" class="input-wrap-label">
+                <input type="text" id="search" aria-describedby="reference" />
+                <div id="reference" class="a11y-hidden">"영화 또는 인물명을 검색하세요."</div>
+                <img src="./assets/img/search.png" alt="검색" tabindex="0" />
+              </label>
+            </div>
           </nav>
-          <div class="input-wrap">
-            <label for="search" class="input--search">
-              <input type="text" id="search" aria-describedby="reference" />
-              <div id="reference" class="a11y-hidden">"영화 또는 인물명을 검색하세요."</div>
-              <img src="./assets/img/search.png" alt="검색" tabindex="0" />
-            </label>
-          </div>
         </div>
       </div>
-      <div class="dropdown-deactivate">
+      <div class="gnb-menu-dropdown">
         <dl>
           <dt><h3><a href="" role="menu">영화</a></h3></dt>
           <dd><a href="" role="menu">무비차트</a></dd>
@@ -163,9 +166,9 @@
     <section class="section--movieChart">
       <div class="movieChart-contents">
         <div class="movieChart-top-wrap">
-            <div class="movieChart-menu-wrap" role="menu">
-              <button class="button-movie-chart">무비차트</button>
-             <button class="button-movie-scheduled">상영예정작</button>
+            <div class="movieChart-menu-wrap" role="listbox">
+              <button>무비차트</button>
+             <button>상영예정작</button>
             </div>
             <div class="view-button-wrap">
               <a href="#" role="button">전체보기
@@ -173,8 +176,8 @@
               </a>
             </div>
         </div>
-        <div class="movie-swiper-slide">
-            <div class="movie-image-wrap">
+        <div class="movie-swiper-slide" role="list">
+            <div class="movie-image-wrap" role="listitem">
                   <img src="./assets/img/grade-12.png" alt="12세 관람등급"
                       class="grade"/>
                   <img src="./assets/img/movie1.jpg" alt="영화 '브로커' 포스터"
@@ -192,7 +195,7 @@
                         <a href="" role="button">예매하기</a>
                       </div>
                     </div>
-            <div class="movie-image-wrap">
+            <div class="movie-image-wrap" role="listitem">
               <img src="./assets/img/grade-15.png" alt="15세 관람등급"
               class="grade"/>
                   <img src="./assets/img/movie2.jpg" alt="영화 '범죄도시2' 포스터"
@@ -210,7 +213,7 @@
               <a href="" role="button">예매하기</a>
             </div>
           </div>
-                <div class="movie-image-wrap">
+                <div class="movie-image-wrap" role="listitem">
                   <img src="./assets/img/grade-12.png" alt="12세 관람등급"
                       class="grade"/>
                   <img src="./assets/img/movie3.jpg" alt="영화 '쥬라기 월드-도미니언' 포스터"
@@ -229,7 +232,7 @@
                     <a href="" role="button">예매하기</a>
                   </div>
                 </div>
-                <div class="movie-image-wrap">
+                <div class="movie-image-wrap" role="listitem">
                   <img src="./assets/img/grade-15.png" alt="15세 관람등급"
                       class="grade" />
                   <img src="./assets/img/movie4.jpg" alt="영화 '마녀2' 포스터"
@@ -247,7 +250,7 @@
                               <a href="" role="button">예매하기</a>
                             </div>
             </div>
-                <div class="movie-image-wrap">
+                <div class="movie-image-wrap" role="listitem">
                   <img src="./assets/img/grade-all.png" alt="전체 관람등급"
                       class="grade" />
                   <img
@@ -277,6 +280,7 @@
       </div>
     </section>
 
+  <!-- section event -->
     <section class="section--event">
       <div class="section--event-wrap">
         <div class="event-top-wrap">
@@ -292,23 +296,23 @@
               </div>
             </div>
           </div>
-        <div class="event-swiper-slide-wrap">
-          <div class="event-info-wrap">
+        <div class="event-swiper-slide-wrap" role="listbox">
+          <div class="event-info-wrap" role="listitem">
             <div class="event-image-wrap"><img src="./assets/img/event1.jpg" alt="영화 '마녀' 필름마크" /></div>
             <strong>[마녀2]CGV 필름마크</strong>
             <p>2022.06.08 ~ 2022.07.03</p>
           </div>
-        <div class="event-info-wrap">
+        <div class="event-info-wrap" role="listitem">
           <div class="event-image-wrap"><img src="./assets/img/event2.jpg" alt="영화 '브로커' 필름마크" /></div>
           <strong>[브로커CGV 필름마크</strong>
           <p>2022.06.08 ~ 2022.07.03</p>
         </div>
-        <div class="event-info-wrap">
+        <div class="event-info-wrap" role="listitem">
           <div class="event-image-wrap"><img src="./assets/img/event3.jpg" alt="영화 '버즈 라이트이어' 필름마크"/></div>
           <strong>[버즈 라이트이어]CGV 필름마크</strong>
           <p>2022.06.08 ~ 2022.07.03</p>
         </div>
-        <div class="event-info-wrap">
+        <div class="event-info-wrap" role="listitem">
           <div class="event-image-wrap"><img src="./assets/img/event4.jpg" alt="영화 '탑건: 매버릭' 필름마크" /></div>
           <strong>[탑건: 매버릭]CGV 필름마크</strong>
           <p>2022.06.15 ~ 2022.07.10</p>
@@ -317,6 +321,7 @@
     </div>
     </section>
 
+    <!-- section specialHall -->
     <section class="section--specialHall">
       <div class="specialHall-top-wrap">
         <h2>특별관</h2>
@@ -333,7 +338,7 @@
           class="specialHall-image" 
           alt="SUITE CINEMA HALL" />
         </div>
-        <div class="specialHall-text-wrap">
+        <div class="specialHall-title-wrap">
           <ul class="specialHall-list">
             <li class="list-checked">
               <a href="" data-id="0">SUITE CINEMA
@@ -360,9 +365,11 @@
         </div>
       </div>
     </section>
+
+    <!-- section gifticon -->
     <section class="section--gifticon">
         <ul class="gifticon-list-wrap">
-        <li class="gifticon-list">
+        <li>
           <dl>
             <div class="gifticon-list-top-wrap">
               <dt>영화관람권</dt>
@@ -394,7 +401,7 @@
             </dd>
           </dl>
         </li>
-        <li class="gifticon-list">
+        <li>
           <dl>
             <div class="gifticon-list-top-wrap">
               <dt>기프트카드</dt>
@@ -432,7 +439,7 @@
           </dd>
           </dl>
         </li>
-      <li class="gifticon-list">
+      <li>
         <dl>
           <div class="gifticon-list-top-wrap">
             <dt>콤보</dt>
@@ -462,16 +469,17 @@
         </dl>
       </li>
     </ul>
-
     </section>
+
+    <!-- section user notice -->
     <section class="section--user-notice">
       <div class="user-board-wrap">
-        <div class="board-notice-wrap">
+        <div class="board-notice-wrap" role="region" aria-label="공지사항 게시판">
           <h3>공지사항</h3>
           <span>[기타]22년 VIP 선정 기준 변경 및 추가 기준 관련 안내</span>
           <a href="#" class="view-button-detail">더보기</a>
         </div>
-        <div class="board-serviceCenter-wrap">
+        <div class="board-serviceCenter-wrap" role="region" aria-label="고객센터 안내">
           <h3>고객센터</h3>
           <div class="board-serviceCenter-content-wrap">
             <strong>1544-1122</strong>
@@ -479,14 +487,14 @@
             <span>업무시간 외 자동응답 안내 가능합니다.</span>
           </div>
         </div>
-        <div class="board-etc-wrap">
-          <span>FAQ</span>
-          <span>1:1 문의</span>
-          <span>대관/단체 문의</span>
+        <div class="board-etc-wrap" role="list">
+          <span role="listitem" aria-label="자주 묻는 질문">FAQ</span>
+          <span role="listitem" aria-label="일대일 문의">1:1 문의</span>
+          <span role="listitem" aria-label="대관, 단체 문의">대관/단체 문의</span>
         </div>
       </div>
-      <article class="article--app-scan">
-        <h4>앱 다운로드</h4>
+      <article class="article--app-scan" role="region" aria-label="앱 다운로드">
+        <h3>앱 다운로드</h3>
         <p class="app-messageA">CGV앱에서 더 편리하게 이용하세요</p>
         <img src="./assets/img/img_qrcode.gif" alt="APP 다운로드 QR코드" />
         <p class="app-messageB">QR코드를 스캔하고<br>
@@ -499,13 +507,13 @@
             <img src="./assets/img/CGV-giftcard.jpg" alt="카카오페이 카드 이벤트 프로모션" />
           </div>
         </div>
-        <button class="button--pause">
+        <button>
           <img src="./assets/img/stop.png" alt="정지" />
         </button>
       </aside>
     </section>
     <aside>
-      <div class="woori-promotion-wrap">
+      <div class="woori-promotion-wrap" role="region" aria-label="우리카드 이벤트">
         <img
           src="./assets/img/promotion.png"
           alt="CGV 우리카드 출시"
@@ -514,7 +522,7 @@
       </div>
     </aside>
     <footer class="footer">
-      <div class="footer-wrap">
+      <div class="footer-wrap" role="contentinfo">
         <ul>
           <div class="footer-policy-list-wrap">
             <li><a href="">회사소개</a></li>
@@ -554,7 +562,7 @@
         </dl>
         <span>© CJ CGV. All Rights Reserved</span>
       </div>
-      <div class="familysite-wrap">
+      <div class="familysite-wrap" role="complementary">
         <select id="familysite">
           <label for="familysite">CJ그룹 계열사 바로가기</label>
           <option class="familysite-title">계열사 바로가기</option>

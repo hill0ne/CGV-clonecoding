@@ -1,0 +1,25 @@
+@keyframes swiper-slide-event-notice {
+  0%,
+  30% {
+    transform: translateX(0%);
+  }
+  50%,
+  70%,
+  90%,
+  100% {
+    transform: translateX(-210px);
+  }
+}
+
+@keyframes swiper-slide {
+  0%,
+  30% {
+    transform: translateX(0%);
+  }
+  50%,
+  70%,
+  90%,
+  100% {
+    transform: translateX(-33.5rem);
+  }
+}
