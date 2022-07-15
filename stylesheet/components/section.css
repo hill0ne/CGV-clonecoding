@@ -834,14 +834,18 @@ section.section--movieChart {
   display: none;
 }
 
-.gotoTop {
+.fixed-button {
   position: fixed;
   right: 21rem;
   bottom: 8rem;
   z-index: 3;
+  opacity: 0;
 }
 
-.gotoTop-wrap a {
+.fixed-button a {
+  position: relative;
+  top: 0;
+  right: 0;
   bottom: 2rem;
   padding: 1.3rem 3.5rem;
   margin: 0.5rem;
@@ -858,7 +862,7 @@ section.section--movieChart {
   text-decoration: none;
 }
 
-.gotoTop-wrap button {
+.fixed-button button.gotoTop-button {
   padding: 1rem 1.5rem;
   border: 1px solid #000;
   border-radius: 50%;
@@ -866,7 +870,7 @@ section.section--movieChart {
   box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
 }
 
-.gotoTop-wrap button img {
+.fixed-button button.gotoTop-button img {
   width: 1.5rem;
   height: 2.1rem;
 }
