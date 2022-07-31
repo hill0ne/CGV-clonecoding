@@ -19,10 +19,6 @@
   width: 100%;
 }
 
-.footer-policy-list-wrap li {
-  list-style: none;
-}
-
 .footer-policy-list-wrap a {
   padding: 1rem;
   font-size: 1.3rem;
@@ -32,10 +28,20 @@
   line-height: 1.4rem;
 }
 
+.footer-policy-list-wrap a:focus {
+  outline: none;
+  border: 2px solid #cacaca;
+}
+
 .footer-policy-list-wrap .personal-policy {
   text-decoration: underline;
   color: #222222;
   font-weight: 700;
+}
+
+.footer-policy-list-wrap .personal-policy:focus {
+  outline: none;
+  border: 2px solid #cacaca;
 }
 
 .company-notice-wrap {
@@ -90,6 +96,12 @@
   border: 1px solid #d8d8d8;
 }
 
+.familysite-wrap select:focus,
+.familysite-wrap a:focus {
+  outline: none;
+  border: 2px solid #cacaca;
+}
+
 .familysite-wrap a {
   font-size: 1.4rem;
   padding: 0.4rem 0.6rem;
@@ -108,6 +120,11 @@
   bottom: 8rem;
   z-index: 3;
   opacity: 0;
+}
+
+.fixed-button a:focus {
+  outline: none;
+  border: 2px solid #cacaca;
 }
 
 .fixed-button a {
@@ -136,6 +153,11 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+}
+
+.fixed-button button.gotoTop-button:focus {
+  outline: none;
+  border: 2px solid #cacaca;
 }
 
 .fixed-button button.gotoTop-button img {

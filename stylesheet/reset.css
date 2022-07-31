@@ -77,20 +77,18 @@ th,
 td {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 button,
-nav {
-  cursor: pointer;
-}
-
+nav,
 a {
-  text-decoration: none;
+  cursor: pointer;
 }
 
 li {
   outline-style: solid #666;
-  list-style: none;
 }
 
 .a11y-hidden {

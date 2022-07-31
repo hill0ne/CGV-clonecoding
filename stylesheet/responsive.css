@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {
+  /* Tablet */
+  .header_wrap .header_top {
+    width: 100%;
+  }
+
+  figcation strong.movie_title {
+    left: 3rem;
+  }
+
+  figcation span.movie_text {
+    left: -3.5rem;
+  }
+
+  .familysite_wrap {
+    right: 4rem;
+  }
+
+  .wooricard-promotion img {
+    left: 0;
+  }
+
+  .fixed_button {
+    right: 4rem;
+    bottom: 8rem;
+  }
+}

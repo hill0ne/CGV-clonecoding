@@ -33,48 +33,48 @@ section.section--movieChart {
   justify-content: space-between;
 }
 
-.movieChart-menu-wrap button {
-  border: none;
+.movieChart-menu-wrap li:nth-of-type(1)::after {
+  position: absolute;
+  content: "";
+  background-color: #d8d8d8;
+  width: 1px;
+  height: 2rem;
+  top: 1.2rem;
+  left: 11rem;
+}
+
+.movieChart-menu-wrap li {
   font-size: 2.6rem;
   background-color: inherit;
 }
 
-.movieChart-menu-wrap button:nth-child(1) {
+.movieChart-menu-wrap li:nth-of-type(1) a {
   font-weight: 700;
   color: #222;
 }
 
-.movieChart-menu-wrap button:nth-child(2) {
+.movieChart-menu-wrap li:nth-of-type(2) a {
   padding-left: 3rem;
   color: #666666;
   font-weight: 400;
 }
 
-.movieChart-menu-wrap button:nth-child(2)::before {
-  position: absolute;
-  content: "";
-  background-color: #d8d8d8;
-  width: 1px;
-  height: 1.5rem;
-  top: 1.7rem;
-  left: 12rem;
-}
-
-.view-button-wrap {
+.viewAll-button-wrap a {
   padding: 0.4rem 1rem 0.4rem 1.5rem;
-  border-radius: 15px;
   border: 1px solid #e2e2e2;
-  box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
-}
-
-.view-button-wrap a {
+  border-radius: 15px;
   color: #343434;
   font-size: 1.4rem;
   font-weight: 400;
   text-decoration: none;
+  box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
 }
 
-.view-button-wrap img {
+.movieChart-menu-wrap li a:focus {
+  outline: none;
+  border: 2px solid #666;
+}
+.viewAll-button-wrap img {
   width: 0.8rem;
   height: 1.3rem;
   margin-left: 0.8rem;
@@ -262,7 +262,7 @@ section.section--movieChart {
   overflow: hidden;
 }
 
-.section--event::after {
+.button--next {
   position: absolute;
   content: "";
   top: 50%;
@@ -275,6 +275,12 @@ section.section--movieChart {
   background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowR_8x13.png")
     center/9px 13px scroll no-repeat;
   box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+  z-index: 10;
+}
+
+.button--next:focus {
+  outline: none;
+  border: 2px solid #cacaca;
 }
 
 .event-top-wrap {
@@ -436,7 +442,12 @@ section.section--movieChart {
 
 .specialHall-title-wrap ul li {
   height: 25%;
-  list-style: none;
+  border-radius: 15px;
+}
+
+.specialHall-title-wrap ul li a:focus {
+  outline: none;
+  border: 2px solid #cacaca;
   border-radius: 15px;
 }
 
@@ -569,7 +580,6 @@ section.section--movieChart {
 
 .board-notice-wrap,
 .board-serviceCenter-wrap {
-  position: relative;
   display: flex;
   align-items: center;
   color: #222;
@@ -605,6 +615,13 @@ section.section--movieChart {
 }
 
 .board-notice-wrap a {
+  position: relative;
+  left: 0.5rem;
+  padding: 0.3rem 1.5rem;
+  color: #666;
+  border: 1px solid #f4f4f4;
+  border-radius: 15px;
+  font-size: 1.1rem;
   white-space: nowrap;
 }
 

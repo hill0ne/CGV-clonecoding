@@ -1,0 +1,45 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: break-all;
+}
+
+/* 버튼 공통 스타일 */
+div[class*="button_wrap"] button {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  right: 0.5rem;
+  background-color: inherit;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+}
+
+div[class*="button_wrap"] button img {
+  width: 0.9rem;
+  height: 1.2rem;
+}
+
+/* focus 공통 스타일 */
+div[class*="detail_wrap"] a:focus,
+div[class*="button_wrap"] a:focus {
+  outline: 2px solid #666;
+}
+
+.header a:focus {
+  outline: none;
+  border: 2px solid #666;
+  border-radius: 5px;
+}
