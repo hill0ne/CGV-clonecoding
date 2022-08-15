@@ -2,10 +2,16 @@
   "name": "vsworkspace",
   "version": "1.0.0",
   "description": "CGV clone coding",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server --port=3000"
+    "start": "live-server --port=3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "hill0ne <jeanj531@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "https://hill0ne.github.io/CGV-clonecoding/"
 }

@@ -341,7 +341,7 @@
     align-items: center;
     top: 4rem;
     width: 100%;
-    height: 45rem;
+    height: 55rem;
     background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1),
@@ -350,16 +350,16 @@
   }
 
   .movieChart_wrap {
-    position: absolute;
-    top: 10%;
+    position: relative;
   }
 
   .movieChart_top {
-    display: flex;
     position: relative;
+    width: 98rem;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98rem;
+    margin-bottom: 1.5rem;
   }
 
   .movieChart_top .list {
@@ -417,16 +417,21 @@
     margin-left: 0.8rem;
   }
 
-  .movie_swiper_slide {
-    display: flex;
+  .movie_slide_wrap {
     position: relative;
     width: 98rem;
-    padding-top: 1.5rem;
+  }
+
+  .movie_slide {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-bottom: 6rem;
   }
 
   .movie_image_wrap {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
     width: 18rem;
     height: 23.4rem;
@@ -477,9 +482,9 @@
 
   .movieName {
     position: relative;
-    top: 100%;
+    top: 23rem;
     width: 17rem;
-    margin-top: 1rem;
+    margin: 1.5rem 0;
     font-size: 1.8rem;
     text-align: center;
     text-overflow: ellipsis;
@@ -489,11 +494,11 @@
   }
 
   .movie_info_wrap {
+    position: relative;
+    top: 20rem;
     display: flex;
-    position: absolute;
     justify-content: space-evenly;
     align-items: center;
-    top: 110%;
     width: 17rem;
     margin-top: 1.5rem;
     font-size: 1.4rem;
@@ -1268,7 +1273,7 @@
   }
 
   /* next 슬라이드 */
-  .movie_swiper_slide .button_next.is-active {
+  .button_next.is-active {
     left: -2rem;
     background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowL.png")
       center/9px 13px scroll no-repeat;

@@ -1,19 +1,24 @@
+// header
 const main = document.querySelector(".main");
 const gnb = document.querySelector(".gnb_menu");
 const gnb_list = document.querySelector(".gnb_list");
 const gnbDropDown = document.querySelector(".gnb_menu_dropdown");
 const personalMenu = document.querySelectorAll(".personal_menu_wrap li");
+const gnb_li = gnb_list.children;
+// movieChart
+const movieSlide = document.querySelector(".movie_slide");
+const movieBtn = document.querySelector(".movieChart_wrap button");
+const nextBtn = document.querySelector(".button_next");
+const nextBtnActive = document.querySelector(".button_next .is-active");
+let buttonStatus = false;
+let a = null;
+// event
+const eventBtn = document.querySelector(".section_event button");
+// specialHall
 const specialHallList = document.querySelector(".specialHall_list");
 const checked = document.querySelector(".list-checked");
 const image = document.querySelector(".specialHall_image");
-const nextBtn = document.querySelector(".button_next");
-const nextBtnActive = document.querySelector(".button_next .is-active");
-
-const gnb_li = gnb_list.children;
-
-let buttonStatus = false;
 let special_li = specialHallList.children;
-let a = null;
 
 // tab 으로 gnb 메뉴 열기
 for (item of gnb_li) {
@@ -51,9 +56,18 @@ function closeDropDownMenu() {
   gnbDropDown.classList.remove("is-active");
 }
 
-// 모달창
-for (item of personalMenu) {
-  item.addEventListener("click", showInfoPage);
+// 슬라이드 버튼
+movieBtn.addEventListener("click", MoveslideButton);
+eventBtn.addEventListener("click", MoveslideButton);
+
+function MoveslideButton() {
+  if (buttonStatus === false) {
+    nextBtn.classList.add("is-active");
+    buttonStatus = true;
+  } else if (buttonStatus === true) {
+    nextBtn.classList.remove("is-active");
+    buttonStatus = false;
+  }
 }
 
 // specialHall 이미지 변경
@@ -116,19 +130,6 @@ function showFixedButon() {
 
 function hideFixedButton() {
   fixButton.classList.remove("is-active");
-}
-
-// 슬라이드 버튼
-nextBtn.addEventListener("click", slideMoveNext);
-
-function slideMoveNext() {
-  console.log("넥스트");
-  if (buttonStatus === false) {
-    nextBtn.classList.add("is-active");
-    buttonStatus = true;
-  } else if (buttonStatus === true) {
-    console.log("프리브");
-  }
 }
 
 // top 버튼
