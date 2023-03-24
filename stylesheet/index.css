@@ -1,5 +1,3 @@
-@media screen and (max-width: 1920px) {
-  /* header */
   .header {
     width: 100%;
     height: 20rem;
@@ -180,7 +178,11 @@
     border: none;
   }
 
-  /* gnb dropdown */
+  .search-btn {
+    border: none;
+    background-color: transparent;
+  }
+
   .gnb_menu_dropdown {
     display: none;
     position: relative;
@@ -247,14 +249,12 @@
     width: 100%;
     height: 100%;
     z-index: 3;
-    background-image: linear-gradient(
-      to right,
-      #000 0%,
-      rgba(0, 0, 0, 0.25) 25%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0.25) 75%,
-      #000 100%
-    );
+    background-image: linear-gradient(to right,
+        #000 0%,
+        rgba(0, 0, 0, 0.25) 25%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.25) 75%,
+        #000 100%);
   }
 
   .video_wrap video {
@@ -318,7 +318,7 @@
     margin-left: 0.7rem;
   }
 
-  .video_controller_wrap > button {
+  .video_controller_wrap>button {
     background-color: transparent;
     width: 2.8rem;
     height: 2.8rem;
@@ -328,7 +328,7 @@
     border-radius: 50%;
   }
 
-  .video_controller_wrap > button img {
+  .video_controller_wrap>button img {
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -342,11 +342,9 @@
     top: 4rem;
     width: 100%;
     height: 55rem;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1),
-      rgba(232, 232, 232, 0.37)
-    );
+    background-image: linear-gradient(to bottom,
+        rgba(255, 255, 255, 1),
+        rgba(232, 232, 232, 0.37));
   }
 
   .movieChart_wrap {
@@ -445,12 +443,10 @@
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.09) 35%,
-      rgba(0, 0, 0, 0.85)
-    );
+    background-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.09) 35%,
+        rgba(0, 0, 0, 0.85));
   }
 
   .grade {
@@ -594,8 +590,7 @@
     border: none;
     border-radius: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowR_8x13.png")
-      center/9px 13px scroll no-repeat;
+    background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowR_8x13.png") center/9px 13px scroll no-repeat;
     box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
     z-index: 10;
   }
@@ -948,7 +943,7 @@
   }
 
   .board_notice span,
-  .board_serviceCenter_info > * {
+  .board_serviceCenter_info>* {
     width: 33rem;
     font-size: 1.4rem;
     padding-left: 3rem;
@@ -984,7 +979,7 @@
     padding-left: 3rem;
   }
 
-  .board_etc > * {
+  .board_etc>* {
     margin-right: 1rem;
     padding: 0.6rem 1.3rem;
     line-height: 1rem;
@@ -1005,6 +1000,7 @@
     border: 1px solid #e4e4e4;
     border-radius: 5px;
   }
+
   .article_app h3 {
     padding-top: 2rem;
     font-size: 1.6rem;
@@ -1048,8 +1044,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    animation: promotion 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) 4s infinite
-      alternate;
+    animation: promotion 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) 4s infinite alternate;
   }
 
   .promotion_image_wrap img {
@@ -1221,11 +1216,9 @@
     font-size: 1.6rem;
     border-radius: 25px;
     background-color: red;
-    background-image: linear-gradient(
-      to left,
-      rgb(255, 115, 86),
-      rgb(251, 67, 87)
-    );
+    background-image: linear-gradient(to left,
+        rgb(255, 115, 86),
+        rgb(251, 67, 87));
     box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
     text-decoration: none;
   }
@@ -1248,8 +1241,6 @@
     height: 2.1rem;
   }
 
-  /* motion 디자인 스타일*/
-  /* gnb 메뉴 */
   .gnb_menu_dropdown.is-active {
     display: flex;
     top: 0.4rem;
@@ -1267,47 +1258,43 @@
     opacity: 1;
   }
 
-  /* fixed 버튼 */
   .fixed_button.is-active a {
     animation: fixed-button 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   }
 
-  /* next 슬라이드 */
   .button_next.is-active {
     left: -2rem;
-    background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowL.png")
-      center/9px 13px scroll no-repeat;
+    background: rgba(255, 255, 255, 0.8) url("../../assets/img/arrowL.png") center/9px 13px scroll no-repeat;
   }
-}
 
-/* 모달창 */
-.modal {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 50rem;
-  height: 50rem;
-  border: 2px solid #222;
-  border-radius: 50%;
-  background: white;
-  font-size: 2rem;
-}
+  /* 모달창 */
+  .modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    height: 50rem;
+    border: 2px solid #222;
+    border-radius: 50%;
+    background: white;
+    font-size: 2rem;
+  }
 
-.modal strong {
-  position: relative;
-  top: -3rem;
-  font-size: 3.5rem;
-}
+  .modal strong {
+    position: relative;
+    top: -3rem;
+    font-size: 3.5rem;
+  }
 
-.modal span {
-  display: inline-block;
-}
+  .modal span {
+    display: inline-block;
+  }
 
-.modal button {
-  position: relative;
-  bottom: -4rem;
-  padding: 0.5rem 1.8rem;
-  font-size: 1.8rem;
-}
+  .modal button {
+    position: relative;
+    bottom: -4rem;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.8rem;
+  }
